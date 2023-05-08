@@ -2,18 +2,18 @@ import './ListaSuspensa.css'
 
 const ListaSuspensa = (props) => {
 
-     console.log(props.itens)
-
     return (
         <div className='lista-suspensa'>
             <label>{props.label}</label>
-            <select>
-                {props.itens.map(item => <option key={item}>{item}</option>)} 
+            <select onChange={evento => props.aoAlterado(evento.target.value)} required={props.required} value={props.value}>
+                {props.itens.map(item => {
+                    return <option key={item}>{item}</option>
+                })}
             </select>
         </div>
     )
 }
 
-export default ListaSuspensa; 
+export default ListaSuspensa
 
 //para cada item retorne uma option (linha11)
