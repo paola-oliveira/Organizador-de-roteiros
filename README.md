@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Organizador de Roteiros 🌍🛫
+Este projeto foi desenvolvido como parte do curso "React: Desenvolvendo com JavaScript" da Alura, com o objetivo de aprender e praticar os conceitos do React.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O curso original propõe a criação de um projeto para gerir os colaboradores da Alura, separados por cargos. No entanto, minha ideia foi criar um organizador de roteiros de viagens.
 
-## Available Scripts
+### Objetivo
+O Organizador de Roteiros tem como objetivo auxiliar na organização de viagens, permitindo a criação de cards com informações importantes sobre cada destino. Os usuários podem adicionar o nome do destino e a duração pretendida da viagem, além de categorizá-los em diferentes tipos de viagens.
 
-In the project directory, you can run:
+As categorias disponíveis no aplicativo são:
 
-### `npm start`
+- Viagens em Família
+- Viagens Românticas
+- Viagens de Verão
+- Viagens de Inverno
+- Viagens Gastronômicas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Funcionalidades
+O projeto possui as seguintes funcionalidades principais:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Adição de roteiros: Os usuários podem adicionar novos roteiros informando o nome do destino e a duração da viagem desejada.
+- Categorização: Cada roteiro pode ser categorizado em uma das opções disponíveis: viagens em família, viagens românticas, viagens de verão, viagens de inverno ou viagens gastronômicas.
+- Visualização: Os roteiros adicionados são exibidos em formato de cards, mostrando as informações do destino e da duração da viagem. 
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Ferramentas utilizadas 🔧 
+<div style="display: inline_block" align="center"><br>
+  <img align="center" alt="Lud-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+  <img align="center" alt="Lud-React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
+  <img align="center" alt="Lud-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img align="center" alt="Lud-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+  <img align="center" alt="Lud-Git" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+  <img align="center" alt="Lud-VScode" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+  <img align="center" alt="Lud-Figma" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
+  <img align="center" alt="Lud-Canva" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" />
+</div>
