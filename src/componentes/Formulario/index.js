@@ -6,16 +6,6 @@ import { useState } from 'react'
 
 const Formulario = (props) => {
 
-    const times = [
-        'Programação',
-        'Front-End',
-        'Data Science',
-        'Devops',
-        'UX e Designer',
-        'Mobile',
-        'Inovação e Gestão'
-    ]
-
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
     const [imagem, setImagem] = useState('')
@@ -29,23 +19,28 @@ const Formulario = (props) => {
             imagem,
             time
         })
+        setNome ('')
+        setCargo('')
+        setImagem('')
+        setTime('')
+
     }
 
 return (
     <section className='formulario'>
         <form onSubmit={aoSalvar}>
-            <h2>Preencha os dados para criar o card do personagem</h2>
+            <h2>Preencha os dados para criar o card de seu roteiro</h2>
             <CampoTexto 
                 obrigatorio={true} 
-                label="Nome" 
-                placeholder="Digite o nome do personagem"
+                label="Destino" 
+                placeholder="Digite o local para onde deseja viajar"
                 valor={nome}
                 aoAlterado={valor => setNome(valor)}
             />
             <CampoTexto 
                 obrigatorio={true} 
-                label="Cargo" 
-                placeholder="Digite o cargo"
+                label="Data" 
+                placeholder="Digite quanto tempo pretende ficar"
                 valor={cargo}
                 aoAlterado={valor => setCargo(valor)}
             />
@@ -57,8 +52,8 @@ return (
             />
             <ListaSuspensa 
                 obrigatorio={true} 
-                label='Time'
-                itens={times}
+                label='Tipo da viagem'
+                itens={props.times}
                 valor={time}
                 aoAlterado={valor => setTime(valor)}
             />

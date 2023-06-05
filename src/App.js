@@ -8,50 +8,55 @@ function App() {
 
   const times = [
     {
-      nome: 'Front-End',
+      nome: 'Viagens em Familia',
       corPrimaria: '#82CFFA',
       corSecundaria: '#E8F8FF',
   },
   {
-      nome: 'Data Sciense',
+      nome: 'Viagens Românticas',
       corPrimaria: '#A6D157',
       corSecundaria: '#F0F8E2',
   },
   {
-      nome: 'Devops',
+      nome: 'Viagens de Verão',
       corPrimaria: '#E06B69',
       corSecundaria: '#FDE7E8',
   },
   {
-      nome: 'UX e Design',
+      nome: 'Viagens de Inverno',
       corPrimaria: '#D86EBF',
       corSecundaria: '#FAE5F5',
   },
   {
-      nome: 'Mobile',
+      nome: 'Viagens Gastronômicas',
       corPrimaria: '#FEBA05',
       corSecundaria: '#FFF5D9',
-  },
-  {
-      nome: 'Inovação e Gestão',
-      corPrimaria: '#FF8A29',
-      corSecundaria: '#FFEEDF',
   }
+  // {
+  //     nome: 'Inovação e Gestão',
+  //     corPrimaria: '#FF8A29',
+  //     corSecundaria: '#FFEEDF',
+  // }
 ]
 
-  const [personagens, setPersonagens] = useState([])
+  const [viagem, setViagem] = useState([])
 
-  const aoNovoPersonagemAdicionado = (personagem) => {
-    console.log(personagem)
-    setPersonagens([...personagens, personagem])
+  const aoNovoCardAdicionado = (novaViagem) => {
+    console.log(novaViagem)
+    setViagem([...viagem, novaViagem])
   }
 
   return (
     <div className="App">
       <Banner />
-      <Formulario aoPersonagemCadastrado={personagem => aoNovoPersonagemAdicionado(personagem)}/>
+      <Formulario times={times.map(time => time.nome)} aoPersonagemCadastrado={viagem => aoNovoCardAdicionado(viagem)}/>
 
-      {times.map(time => <Time key={time.nome} nome={time.nome} corPrimaria={time.corPrimaria} corSecundaria={time.corSecundaria}/>)}
+      {times.map(time => <Time 
+        key={time.nome} 
+        nome={time.nome} 
+        corPrimaria={time.corPrimaria} 
+        corSecundaria={time.corSecundaria} 
+        viagem={viagem.filter(viagem => viagem.time === time.nome)}/>)}
     </div>
   );
 }
