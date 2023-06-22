@@ -6,7 +6,7 @@ const Time = (props) => {
         (props.viagem.length > 0) ? <section className='time' style={{backgroundColor: props.corSecundaria}}>
             <h3 style={{borderColor: props.corPrimaria}}>{props.nome}</h3>
             <div className='colaboradores'>
-                {props.viagem.map(viagem => <Colaborador nome={viagem.nome} cargo={viagem.cargo} imagem={viagem.imagem}/>)}
+                {props.viagem.map(viagem => <Colaborador key={viagem.nome} nome={viagem.nome} cargo={viagem.cargo} imagem={viagem.imagem}/>)}
             </div>
         </section>
         : ''

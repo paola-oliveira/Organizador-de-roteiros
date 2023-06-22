@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Banner from './componentes/Banner/Banner';
 import Formulario from './componentes/Formulario';
 import Time from './componentes/Time';
+import Rodape from './componentes/Rodape';
 
 function App() {
 
@@ -32,17 +33,11 @@ function App() {
       corPrimaria: '#FEBA05',
       corSecundaria: '#FFF5D9',
   }
-  // {
-  //     nome: 'Inovação e Gestão',
-  //     corPrimaria: '#FF8A29',
-  //     corSecundaria: '#FFEEDF',
-  // }
 ]
 
   const [viagem, setViagem] = useState([])
 
   const aoNovoCardAdicionado = (novaViagem) => {
-    console.log(novaViagem)
     setViagem([...viagem, novaViagem])
   }
 
@@ -57,6 +52,7 @@ function App() {
         corPrimaria={time.corPrimaria} 
         corSecundaria={time.corSecundaria} 
         viagem={viagem.filter(viagem => viagem.time === time.nome)}/>)}
+        <Rodape/>
     </div>
   );
 }
