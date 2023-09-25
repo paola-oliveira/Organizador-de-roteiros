@@ -29,7 +29,7 @@ const Formulario = (props) => {
 return (
     <section className='formulario'>
         <form onSubmit={aoSalvar}>
-            <h2>Preencha os dados para criar o card de seu roteiro</h2>
+            <h2 className='titulo'>Preencha os dados para criar o card de seu roteiro</h2>
             <CampoTexto 
                 obrigatorio={true} 
                 label="Destino" 
