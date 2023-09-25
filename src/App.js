@@ -10,23 +10,23 @@ function App() {
   const times = [
     {
       nome: 'Viagens em Familia',
-      corPrimaria: '#82CFFA',
-      corSecundaria: '#E8F8FF',
+      corPrimaria: '#517245',
+      corSecundaria: '#BACBB4',
   },
   {
       nome: 'Viagens Românticas',
-      corPrimaria: '#A6D157',
-      corSecundaria: '#F0F8E2',
+      corPrimaria: '#2F3D4C',
+      corSecundaria: '#8FA9C6',
   },
   {
       nome: 'Viagens de Verão',
-      corPrimaria: '#E06B69',
-      corSecundaria: '#FDE7E8',
+      corPrimaria: '#742520',
+      corSecundaria: '#BB9795',
   },
   {
       nome: 'Viagens de Inverno',
-      corPrimaria: '#D86EBF',
-      corSecundaria: '#FAE5F5',
+      corPrimaria: '#DAB990',
+      corSecundaria: '#EBDCD5',
   },
   {
       nome: 'Viagens Gastronômicas',
@@ -41,6 +41,10 @@ function App() {
     setViagem([...viagem, novaViagem])
   }
 
+  function deletarColaborador() {
+    console.log('deletando colaborador');
+}
+
   return (
     <div className="App">
       <Banner />
@@ -51,7 +55,9 @@ function App() {
         nome={time.nome} 
         corPrimaria={time.corPrimaria} 
         corSecundaria={time.corSecundaria} 
-        viagem={viagem.filter(viagem => viagem.time === time.nome)}/>)}
+        viagem={viagem.filter(viagem => viagem.time === time.nome)}
+        aoDeletar={deletarColaborador}
+        />)}
         <Rodape/>
     </div>
   );
